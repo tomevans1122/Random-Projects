@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import font
 import requests
 import math
+import calendar 
 
 
 # Given any date in the style XX/X/XXXX, figure out the day of the week of that date
@@ -47,12 +48,13 @@ class Codes:
 			return century_code[century]
 
 	def leap_year(self, full_year, century):
-		if century >= 17 and full_year % 4 == 0 and full_year % 100 != 0 and full_year % 400 == 0 and month == 1 or month == 2:
+		leap = calendar.isleap(full_year)
+		if leap and month == 1:
 			return -1
-		elif century < 17 and full_year % 4 == 0:
-			return -1
-		else:
-			return 0
+                elif leap and month == 2:
+                        return -1
+                else:
+                        return 0
 
 # Assigning a variable to the class
 func = Codes(year, month, century)
