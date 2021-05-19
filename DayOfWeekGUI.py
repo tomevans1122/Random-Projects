@@ -1,3 +1,5 @@
+# Script provides the day of week of any date in history or the future via GUI.
+
 import tkinter as tk
 from tkinter import font
 import requests
@@ -6,8 +8,6 @@ import calendar
 import datetime 
 from datetime import datetime 
 
-# Try adding the day of the week calculations into this code, entry.get() seems to work so far?
-#add dictionairies for days, month, century
 
 #Gregorian calendar month codes- changed from julian calendar in 1752
 centuryCode = {17:4, 18:2, 19:0, 20:6, 21:4, 22:2, 23:0, 24:6, 25:4, 26:2, 27:0}
