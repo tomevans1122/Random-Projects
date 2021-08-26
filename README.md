@@ -1,2 +1,2 @@
 # Projects
-A few simple to intermediate python projects. 
+A few random projects
