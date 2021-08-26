@@ -1,4 +1,6 @@
-# The Collatz
+# The Collatz conjecture has confused the bejesus out of mathematicians for decades, I thought it would be pretty cool to make a script that shows the first 
+# few integers being subject to its mystery.. 
+# Figure produced by this script is in the repo under Collatz_1-20.png
 
 import matplotlib.pyplot as plt
 import numpy as np
